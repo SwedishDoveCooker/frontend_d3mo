@@ -4780,7 +4780,7 @@ Le.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = td, Le.createPortal = fu
     function e() { if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ < "u" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE == "function") try { __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE(e) } catch {} }(), yu.exports = Le;
 var eu = yu.exports;
 Go.createRoot = eu.createRoot, Go.hydrateRoot = eu.hydrateRoot;
-const rd = "" + new URL("avatar.jpg",
+const rd = "" + new URL("horse-face.png",
     import.meta.url).href;
 var i0 = { color: void 0, size: void 0, className: void 0, style: void 0, attr: void 0 },
     tu = Rt.createContext && Rt.createContext(i0),
