@@ -234,19 +234,34 @@ html[style*="--scroll-y: 7px"] .content {
 }
 
 .content .bento {
-    --template-columns: 8;
+    --template-columns: 12;
     display: grid;
     grid-template-columns: repeat(var(--template-columns), 1fr);
     grid-column-gap: 40px;
     grid-row-gap: 40px;
-    grid-column: span 8
+    grid-column: span 12
 }
 
 .content .projects {
-    grid-column: span 4
+    grid-column: span 0
 }
 
 @media screen and (max-width: 1300px) {
+    .content .bento {
+        --template-columns: 8;
+        grid-column-gap: 25px;
+        grid-row-gap: 25px
+    }
+    .content .bento .widget.mobile-aspect-ratio,
+    .content .bento .widget-container.mobile-aspect-ratio {
+        height: unset;
+        aspect-ratio: var(--mobile-aspect-ratio)
+    }
+    .content .bento .widget.mobile-specific-size,
+    .content .bento .widget-container.mobile-specific-size {
+        --c: min(var(--m-columns, 2), var(--template-columns));
+        --r: var(--m-rows, 2)
+    }
     .content {
         display: flex;
         flex-direction: column;
